@@ -86,6 +86,9 @@ TEST(ReadWriteLogRecord, SetAndGet)
 }
 
 // Define a basic Logger class
+namespace
+{
+
 class TestBodyLogger : public opentelemetry::logs::Logger
 {
 public:
@@ -343,3 +346,5 @@ TEST(LogBody, BodyConversation)
     }
   }
 }
+
+}  // namespace
